@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="root">
+      <h1>Реєстрація</h1>
+      <form action="registration">
+        <div class="data-section">
+          <label for="firstName" class="label">Ім'я</label>
+          <div class="options">
+            <input
+              id="firstName"
+              name="firstName"
+              type="text"
+              pattern="[а-яА-ЯьЬіІїЇєЄa-zA-Z\-]+"
+              title="Лише букви"
+              placeholder="Анна"
+              required
+            />
+          </div>
+        </div>
+        <div class="data-section">
+          <label for="lastName" class="label">Прізвище</label>
+          <div class="options">
+            <input
+              id="lastName"
+              name="lastName"
+              type="text"
+              pattern="[а-яА-ЯьЬіІїЇєЄa-zA-Z\-]+"
+              title="Лише букви"
+              placeholder="Шевченко"
+              required
+            />
+          </div>
+        </div>
+        <div class="data-section">
+          <label for="birthDate" class="label">Дата народження</label>
+          <div class="options">
+            <input
+              id="birthDate"
+              name="birthDate"
+              type="text"
+              pattern="[0-3]\d\.[01]\d\.[12]\d{3}"
+              title="Формат: **.**.****, правдиві дані"
+              placeholder="01.01.2001"
+              required
+            />
+          </div>
+        </div>
+        <div class="data-section">
+          <span class="label">Стать</span>
+          <div class="options">
+            <div class="gender">
+              <input id="male" name="gender" type="radio" value="male" checked/>
+              <label for="male">Чоловік</label>
+            </div>
+            <div class="gender">
+              <input id="female" name="gender" type="radio" value="female" />
+              <label for="female">Жінка</label>
+            </div>
+          </div>
+        </div>
+        <div class="data-section">
+          <label for="city" class="label">Місто</label>
+          <div class="options">
+            <input
+              name="cityInput"
+              list="city"
+              placeholder="Київ"
+              required
+            />
+            <datalist id="city" name="city"></datalist>
+          </div>
+        </div>
+        <div class="data-section">
+          <label for="address" class="label">Адреса</label>
+          <div class="options">
+            <textarea
+              id="address"
+              name="address"
+              placeholder="Проспект Незалежності, 1"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <div class="data-section">
+          <span class="label">Мови спілкування</span>
+          <div class="options">
+            <div class="lang">
+              <input
+                id="english"
+                type="checkbox"
+                value="Англійська"
+                name="languages"
+              />
+              <label for="languages">Англійська</label>
+            </div>
+            <div class="lang">
+              <input
+                id="german"
+                type="checkbox"
+                value="Німецька"
+                name="languages"
+              />
+              <label for="german">Німецька</label>
+            </div>
+            <div class="lang">
+              <input
+                id="spanish"
+                type="checkbox"
+                value="Іспанська"
+                name="languages"
+              />
+              <label for="spanish">Іспанська</label>
+            </div>
+            <div class="lang">
+              <input
+                id="french"
+                type="checkbox"
+                value="Французька"
+                name="languages"
+              />
+              <label for="french">Французька</label>
+            </div>
+            <div class="lang">
+              <input
+                id="polish"
+                type="checkbox"
+                value="Польська"
+                name="languages"
+              />
+              <label for="polish">Польська</label>
+            </div>
+            <div class="lang">
+              <input
+                id="russian"
+                type="checkbox"
+                value="Російська"
+                name="languages"
+              />
+              <label for="russian">Російська</label>
+            </div>
+          </div>
+        </div>
+        <button type="submit">Зберегти</button>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

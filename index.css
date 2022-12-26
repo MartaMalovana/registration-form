@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(171, 66, 99);
+}
+
+.root {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid rgba(79, 5, 28, 0.79);
+    background-color: rgba(249, 167, 193, 0.79);
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.label {
+    width: calc((100% - 60px)/3);
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 700; 
+}
+
+.data-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 5px 30px;
+    border-radius: 15px;
+    background-color:  rgba(79, 5, 28, 0.79);
+    color: white;
+}
+
+input {
+    padding: 5px 15px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    height: fit-content;
+}
+
+input[name="first-name"],
+input[name="last-name"],
+input[name="birth-date"],
+input[name="cityInput"] {
+    width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 60px)/3*2);
+}
+
+label[for="male"] {
+    margin-right: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.lang {
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.gender {
+    width: 100px;
+    display: flex;
+    align-items: baseline;
+
+}
+
+#city {
+    display: none;
+}
+
+option {
+    display: none;
+}
+
+th {
+    padding:  5px 20px;
+    text-align: start;
+}
+
+table {
+    margin: 0 auto;
+}
